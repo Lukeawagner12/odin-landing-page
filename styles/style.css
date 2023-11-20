@@ -38,19 +38,31 @@ a {
 .wrapper {
     width: 80%;
 }
+.section,
+footer {
+    padding: 5vh 0;
+}
+.section-1,
+.section-2,
+.section-3,
+.section-4,
+footer {
+    display: flex;
+    justify-content: center;
+}
 .section-1,
 footer {
     background-color: #1f2937;
-    display: flex;
-    justify-content: center;
 }
 .hero {
     display: flex;
     gap: 5vw;
     margin: 58px 0;
+    flex-wrap: wrap;
 }
 .hero-box {
     width: 50%;
+    min-width: 400px;
 }
 .cta {
     text-decoration: none;
@@ -69,9 +81,121 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 250px;
 }
 .hero-image h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Section 2 */
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+}
+.section-2 h2 {
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: bolder;
+}
+.section-2 p {
+    color: #1f2937;
+    font-size: 16px;
+}
+.icons-container {
+    display: flex;
+    gap: 3vw;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.icon-container {
+    width: 200px;
+    flex-wrap: wrap;
+}
+.icon {
+    width: 200px;
+    height: 200px;
+    border: solid #3882f6 4px;
+    border-radius: 12px;
+}
+.icon-text {
+    text-align: center;
+}
+
+/* section 3 */
+.section-3 {
+    background-color: #e5e7eb;
+}
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10vw;
+}
+.quote p {
+    font-size: 36px;
+    color: #172937;
+    font-weight: light;
+}
+.author p {
+    font-size: 32px;
+    color: #2f2f2f;
+    font-weight: 500;
+    text-align: end;
+}
+
+/* Section 4 */
+
+.block-container {
+    background-color: #3882f6;
+    width: 100%;
+    border-radius: 12px;
+}
+.block-content {
+    padding: 5vh 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+.block-text,
+.block-link {
+    display: flex;
+}
+.block-link {
+    justify-content: end;   
+}
+.block-text {
+    justify-content: start;
+    flex-direction: column;
+}
+.block-text h3 {
+    margin: 0;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+}
+.block-text p {
+    margin: 0;
+    font-size: 18px;
+}
+.block-link a {
+    text-decoration: none;
+    padding: 8px 18px;
+    background-color: transparent;
+    border-radius: 8px;
+    transition: .5s;
+    border: #fff 3px solid;
+}
+.block-link a:hover {
+    background-color: lightgray;
+    border-radius: 8px;
+}
+
+/* Footer */
+.footer {
+    pad
 }
